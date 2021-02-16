@@ -6,7 +6,9 @@ header,
 }
 
 #intro {
+    background:  rgba(255,255,255,0.00);
     background-image: url(assets/main-banner.png);
+    background-image: url(assets/main-banner.png), linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(0,0,0,0.5) 65%);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -14,11 +16,17 @@ header,
     background-size: cover;
 }
 
+.introp{
+    margin-left: -296px;
+    padding: 0px;
+    right: -145px;
+}
 .service{
     font-family: 'Quicksand', sans-serif !important;
     font-weight: bold;
     font-size: 36px;
     color: #36413c;
+    line-height: 1.45;
 }
 
 .service-text{
@@ -26,6 +34,7 @@ header,
     font-size: 24px;
     font-weight: 500;
     color: #5e6e66; 
+    line-height: 1.45;
 }
 
 .dog-h2{
@@ -58,23 +67,125 @@ header,
     font-weight: 700;
     float: left;
 }
+.banner{
+    font-family: 'Quicksand', sans-serif !important;
+    font-size: 45px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.45;
+}
+
+.banner-sub{
+    font-family: 'Quicksand', sans-serif !important;
+    font-size: 24px;
+    font-weight: 500;
+    color:  #ffffff;
+    line-height: 1.45;
+}
+
+.banner-btn{
+    font-family: 'Quicksand', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    height: 48px !important;
+    border-radius: 4px !important;
+    background: #de6c17 !important;
+    border-color:  #de6c17 !important;
+    color: #ffffff;
+    width:180px !important;
+    line-height: 1.45 !important;
+    margin-top:15px;
+}
+.img-bot{
+    width: 100% !important;
+    margin-top:232px ;
+}
+.img-b{
+    width:100% !important;
+}
+.pad{
+    padding-top: 15rem !important;
+}
 .img-fluid {
     border-radius: 8px 8px 0px 0px !important;
 }
 .card {
-    border-radius: 0px 0px 8px 8px !important;
+    border-radius: 8px 8px 8px 8px !important;
 }
 
-.top-nav-collapse {
-    background-color: #24355C;
-  }
+@media(min-width: 320px) {
+    .img-bot{
+        margin-top: 30px ;
+    }
+}
+
+ @media(min-width: 360px) {
+     .img-bot{
+         margin-top: 136px ;
+     }
+ }
+
+ @media(min-width: 414px) {
+    .img-bot{
+        margin-top: 225px ;
+    }
+}
+
+@media(min-width: 375px) {
+    .img-bot{
+        margin-top: 160px ;
+    }
+}
+
+@media(min-width: 540px) {
+    .img-bot{
+        margin-top: 235px ;
+    }
+}
+
+
+
+@media(max-width: 280px) {
+    .img-bot{
+        margin-top: 75px ;
+    }
+}
+
+
+
+ 
+
   @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
       background-color: #24355C;
     }
+    .introp{
+        margin-left: 0px !important;
+        padding: 20px !important;
+        right: 0px !important;
+    }
+    .banner{
+        font-size: 30px;
+    }
+    .banner-sub{
+        font-size: 20px;
+    }
+    .service{
+        font-size: 30px;
+    }
+    .service-text{
+        font-size: 20px;
+    }
+    .dog-h2{
+        font-size: 24px;
+    }
+    .dog-text{
+        font-size: 16px;
+    }
+
   }
   @media (min-width: 800px) and (max-width: 850px) {
-    .navbar:not(.top-nav-collapse) {
-      background-color: #24355C;
+    .img-bot{
+        margin-top: 70%;
     }
   }
