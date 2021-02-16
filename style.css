@@ -1,0 +1,80 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background-image: url(assets/main-banner.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.service{
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: bold;
+    font-size: 36px;
+    color: #36413c;
+}
+
+.service-text{
+    font-family: 'Quicksand', sans-serif !important;
+    font-size: 24px;
+    font-weight: 500;
+    color: #5e6e66; 
+}
+
+.dog-h2{
+    font-family: 'Quicksand', sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 700;
+    color: #36413c; 
+    text-align: left !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.dog-text{
+    font-family: 'Quicksand', sans-serif !important;
+    font-size: 18px;
+    font-weight: 500;
+    color: #5e6e66; 
+    text-align: justify;
+}
+
+.btns {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;      
+    color: #ff6d00;
+    font-family: 'Quicksand', sans-serif !important;
+    font-size: 18px;
+    font-weight: 700;
+    float: left;
+}
+.img-fluid {
+    border-radius: 8px 8px 0px 0px !important;
+}
+.card {
+    border-radius: 0px 0px 8px 8px !important;
+}
+
+.top-nav-collapse {
+    background-color: #24355C;
+  }
+  @media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
+  }
