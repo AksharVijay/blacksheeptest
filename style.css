@@ -100,11 +100,26 @@ header,
     width: 100% !important;
     margin-top:232px ;
 }
+.imgg{
+    width:100%;
+    overflow: overlay;
+    margin-top:-70px;
+}
+.img-botss{
+    width:100% !important;
+    background-image: url(assets//banner-wave.svg), url(assets/main-banner.png) !important;
+    background-position: left top, center top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .img-b{
     width:100% !important;
 }
 .pad{
-    padding-top: 15rem !important;
+    padding-top: 10rem !important;
 }
 .img-fluid {
     border-radius: 8px 8px 0px 0px !important;
@@ -113,52 +128,65 @@ header,
     border-radius: 8px 8px 8px 8px !important;
 }
 
-@media(min-width: 320px) {
-    .img-bot{
-        margin-top: 30px ;
+@media(min-width: 360px) {
+    .imgg{
+        margin-top:-40px;
+    }
+    .introp{
+        margin-left: 0px !important;
+        padding: 20px !important;
+        right: 0px !important;
     }
 }
-
- @media(min-width: 360px) {
-     .img-bot{
-         margin-top: 136px ;
-     }
- }
-
- @media(min-width: 414px) {
-    .img-bot{
-        margin-top: 225px ;
-    }
-}
-
-@media(min-width: 375px) {
-    .img-bot{
-        margin-top: 160px ;
-    }
-}
-
-@media(min-width: 540px) {
-    .img-bot{
-        margin-top: 235px ;
-    }
-}
-
-
 
 @media(max-width: 280px) {
-    .img-bot{
-        margin-top: 75px ;
+    .imgg{
+        margin-top:-40px !important;
+    }
+    .introp{
+        margin-left: 0px !important;
+        padding: 20px !important;
+        right: 0px !important;
     }
 }
 
-
-
  
-
-  @media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse) {
-      background-color: #24355C;
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cards{
+        flex-direction: row !important;
     }
+    .img-fluid{
+        width:50%;
+    }
+
+    .pad{
+        padding: 20rem 10rem !important;
+    }
+
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .cards{
+        flex-direction: column!important;
+    }
+    .img-fluid{
+        width:100%;
+    }
+    #intro{
+        background-position-y: center;
+    background-position-x: center;
+    backface-visibility: visible;
+    background-blend-mode: color-dodge;
+    }
+
+}
+  @media (max-width: 768px) {
+    #intro{
+        background-position-y: center;
+    background-position-x: center;
+    backface-visibility: visible;
+    background-blend-mode: color-dodge;
+    }
+
     .introp{
         margin-left: 0px !important;
         padding: 20px !important;
@@ -184,6 +212,8 @@ header,
     }
 
   }
+
+
   @media (min-width: 800px) and (max-width: 850px) {
     .img-bot{
         margin-top: 70%;
